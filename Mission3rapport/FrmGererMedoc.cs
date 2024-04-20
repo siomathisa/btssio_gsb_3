@@ -8,9 +8,9 @@ namespace gsbRapports
 {
     public partial class FrmGererMedoc : Form
     {
-        private gsb2023Entities mesDonnees;
+        private gsbrapports2023Entities mesDonnees;
 
-        public FrmGererMedoc(gsb2023Entities mesDonnees)
+        public FrmGererMedoc(gsbrapports2023Entities mesDonnees)
         {
             InitializeComponent();
             this.mesDonnees = mesDonnees;
@@ -72,6 +72,11 @@ namespace gsbRapports
 
             FrmNouvelleFamille F2 = new FrmNouvelleFamille(this.mesDonnees);
             F2.Show();
+        }
+
+        private void FrmGererMedoc_Load(object sender, EventArgs e)
+        {
+
         }
     }
 

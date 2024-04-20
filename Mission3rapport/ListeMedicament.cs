@@ -8,10 +8,10 @@ namespace Mission3rapport
 {
     public partial class ListeMedicament : Form
     {
-        private gsb2023Entities mesDonnees;
+        private gsbrapports2023Entities mesDonnees;
         private string familleSelectionnee;
 
-        public ListeMedicament(gsb2023Entities mesDonnees)
+        public ListeMedicament(gsbrapports2023Entities mesDonnees)
         {
             InitializeComponent();
             this.mesDonnees = mesDonnees;
@@ -161,6 +161,21 @@ namespace Mission3rapport
         }
 
         private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bdgMedicament_CurrentChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dListeMedicaments_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void ListeMedicament_Load(object sender, EventArgs e)
         {
 
         }

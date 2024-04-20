@@ -31,7 +31,6 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.médicamentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ajouterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.gérerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -42,43 +41,37 @@
             this.médicamentToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(813, 30);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(610, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // médicamentToolStripMenuItem
             // 
             this.médicamentToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ajouterToolStripMenuItem,
-            this.gérerToolStripMenuItem});
+            this.ajouterToolStripMenuItem});
             this.médicamentToolStripMenuItem.Name = "médicamentToolStripMenuItem";
-            this.médicamentToolStripMenuItem.Size = new System.Drawing.Size(106, 24);
+            this.médicamentToolStripMenuItem.Size = new System.Drawing.Size(86, 20);
             this.médicamentToolStripMenuItem.Text = "&Médicament";
             // 
             // ajouterToolStripMenuItem
             // 
             this.ajouterToolStripMenuItem.Name = "ajouterToolStripMenuItem";
-            this.ajouterToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.ajouterToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.ajouterToolStripMenuItem.Text = "&Gérer";
             this.ajouterToolStripMenuItem.Click += new System.EventHandler(this.ajouterToolStripMenuItem_Click);
             // 
-            // gérerToolStripMenuItem
-            // 
-            this.gérerToolStripMenuItem.Name = "gérerToolStripMenuItem";
-            this.gérerToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.gérerToolStripMenuItem.Text = "&Liste";
-            // 
             // FrmMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(813, 469);
+            this.ClientSize = new System.Drawing.Size(610, 381);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmMenu";
             this.Text = "Appli-CR";
+            this.Load += new System.EventHandler(this.FrmMenu_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -91,7 +84,6 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem médicamentToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ajouterToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem gérerToolStripMenuItem;
     }
 }
 

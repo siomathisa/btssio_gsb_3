@@ -13,8 +13,8 @@ namespace Mission3rapport
 {
     public partial class FrmNouvelleFamille : Form
     {
-        private gsb2023Entities mesDonnees;
-        public FrmNouvelleFamille (gsb2023Entities mesDonnees)
+        private gsbrapports2023Entities mesDonnees;
+        public FrmNouvelleFamille (gsbrapports2023Entities mesDonnees)
         {
             InitializeComponent();
             this.mesDonnees = mesDonnees;
@@ -34,6 +34,11 @@ namespace Mission3rapport
             this.mesDonnees.familles.Add(newFamille());
             this.mesDonnees.SaveChanges();
             MessageBox.Show("Enregistrement validé");
+        }
+
+        private void FrmNouvelleFamille_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

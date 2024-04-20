@@ -51,7 +51,7 @@
             // txtId
             // 
             this.txtId.Location = new System.Drawing.Point(241, 116);
-            this.txtId.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtId.Margin = new System.Windows.Forms.Padding(2);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(105, 20);
             this.txtId.TabIndex = 1;
@@ -59,7 +59,7 @@
             // txtNomFamille
             // 
             this.txtNomFamille.Location = new System.Drawing.Point(241, 140);
-            this.txtNomFamille.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNomFamille.Margin = new System.Windows.Forms.Padding(2);
             this.txtNomFamille.Name = "txtNomFamille";
             this.txtNomFamille.Size = new System.Drawing.Size(105, 20);
             this.txtNomFamille.TabIndex = 3;
@@ -79,7 +79,7 @@
             this.btnEnregistrer.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.btnEnregistrer.ForeColor = System.Drawing.SystemColors.Control;
             this.btnEnregistrer.Location = new System.Drawing.Point(215, 164);
-            this.btnEnregistrer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEnregistrer.Margin = new System.Windows.Forms.Padding(2);
             this.btnEnregistrer.Name = "btnEnregistrer";
             this.btnEnregistrer.Size = new System.Drawing.Size(145, 33);
             this.btnEnregistrer.TabIndex = 4;
@@ -101,9 +101,10 @@
             this.Controls.Add(this.nomFamille);
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.IdFamille);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmNouvelleFamille";
             this.Text = "FrmNouvelleFamille";
+            this.Load += new System.EventHandler(this.FrmNouvelleFamille_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bdgSFamille)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

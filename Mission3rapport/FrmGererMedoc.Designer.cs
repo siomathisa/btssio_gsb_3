@@ -104,6 +104,7 @@ namespace gsbRapports
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmGererMedoc";
             this.Text = "FrmGererMedoc";
+            this.Load += new System.EventHandler(this.FrmGererMedoc_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bdgGereMedoc)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

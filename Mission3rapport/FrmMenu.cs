@@ -6,11 +6,11 @@ namespace gsbRapports
 {
     public partial class FrmMenu : Form
     {
-        private gsb2023Entities mesDonnees;
+        private gsbrapports2023Entities mesDonnees;
         public FrmMenu()
         {
             this.InitializeComponent();
-            this.mesDonnees = new gsb2023Entities();
+            this.mesDonnees = new gsbrapports2023Entities();
             this.IsMdiContainer = true;
         }
 
@@ -23,6 +23,14 @@ namespace gsbRapports
             F2.Show();
         }
 
-  
+        private void FrmMenu_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gérerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

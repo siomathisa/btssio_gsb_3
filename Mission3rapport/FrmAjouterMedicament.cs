@@ -12,9 +12,9 @@ namespace Mission3rapport
 {
     public partial class FrmAjouterMedicament : Form
     {
-        private gsb2023Entities mesDonnees;
+        private gsbrapports2023Entities mesDonnees;
 
-        public FrmAjouterMedicament(gsb2023Entities mesDonnees)
+        public FrmAjouterMedicament(gsbrapports2023Entities mesDonnees)
         {
             InitializeComponent();
             this.mesDonnees = mesDonnees;
